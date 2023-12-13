@@ -27,6 +27,7 @@ class ADMIN(Base):
     prod_id = Column(INTEGER(12), nullable=False, unique=True)
     prod_name = Column(VARCHAR(30), nullable=False)
     prod_desc = Column(VARCHAR(100), nullable=False)
+    prod_image = Column(VARCHAR(100))
     prod_quantity = Column(INTEGER(1000), nullable=True)
     prod_barcode =  Column(INTEGER(10), unique=True, nullable=False)
 

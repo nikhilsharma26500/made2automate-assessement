@@ -18,15 +18,17 @@ Base = declarative_base()
 #     id = Column(Integer, primary_key=True, index=True)
 #     name = Column(String, unique=True, index=True)
 #     email = Column(String, unique=True, index=True)
-    
+
+
 class ADMIN(Base):
     __tablename__ = "admin"
-    
-    id = Column(INTEGER(500), primary_key=True, autoincrement=True, index=True)
-    prod_id = Column(INTEGER(12), nullable=True, unique=True)
-    prod_name = Column(VARCHAR(30), nullable=True)
-    prod_desc = Column(VARCHAR(100), nullable=True)
 
+    id = Column(INTEGER(500), primary_key=True, autoincrement=True, index=True)
+    prod_id = Column(INTEGER(12), nullable=False, unique=True)
+    prod_name = Column(VARCHAR(30), nullable=False)
+    prod_desc = Column(VARCHAR(100), nullable=False)
+    prod_quantity = Column(INTEGER(1000), nullable=True)
+    prod_barcode =  Column(INTEGER(10), unique=True, nullable=False)
 
 
 ###################### DATABASE CONNECTION ######################

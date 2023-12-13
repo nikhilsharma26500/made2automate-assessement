@@ -1,3 +1,5 @@
 - npm folder could not be found - solved with blog on google (https://www.wikitechy.com/errors-and-fixes/node-js/node-js-windows-error-enoent-stat-c-users-rt-app-data-roaming-npm)
 
 - pip not installed - solved with gpt-4
+
+- hosted database on TiDB for ease of use

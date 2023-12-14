@@ -9,32 +9,50 @@ const products = [
         "productName": "16x16x28 Inductive Sensor Sn: 5mm II Make: DOLPHIN",
         "description": "Inductive Sensor which detects all types of Metallic target. Sensor sensing range varies with Amount of Ferrous Content in Metal. Used for Positioning,aligning & Counting Applications..",
         "imageLink": "https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/1-34.webp?fit=600%2C600&ssl=1",
-        "barcode": randomNumber
+        "barcode": randomNumber,
+        "customerName": "Rajesh Kumar",
+        "pieces": 15
     },
     {
         "productName": "16x16x28 Inductive Sensor Sn: 5mm II Make: DOLPHIN",
         "description": "Inductive Sensor which detects all types of Metallic target. Sensor sensing range varies with Amount of Ferrous Content in Metal. Used for Positioning,aligning & Counting Applications..",
         "imageLink": "https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/1-34.webp?fit=600%2C600&ssl=1",
-        "barcode": randomNumber 
+        "barcode": randomNumber,
+        "customerName": "Rajesh Kumar",
+        "pieces": 15
     },
     {
         "productName": "16x16x28 Inductive Sensor Sn: 5mm II Make: DOLPHIN",
         "description": "Inductive Sensor which detects all types of Metallic target. Sensor sensing range varies with Amount of Ferrous Content in Metal. Used for Positioning,aligning & Counting Applications..",
         "imageLink": "https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/1-34.webp?fit=600%2C600&ssl=1",
-        "barcode": randomNumber
+        "barcode": randomNumber,
+        "customerName": "Rajesh Kumar",
+        "pieces": 15
     },
     {
         "productName": "16x16x28 Inductive Sensor Sn: 5mm II Make: DOLPHIN",
         "description": "Inductive Sensor which detects all types of Metallic target. Sensor sensing range varies with Amount of Ferrous Content in Metal. Used for Positioning,aligning & Counting Applications..",
         "imageLink": "https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/1-34.webp?fit=600%2C600&ssl=1",
-        "barcode": randomNumber
+        "barcode": randomNumber,
+        "customerName": "Rajesh Kumar",
+        "pieces": 15
     },
     {
         "productName": "16x16x28 Inductive Sensor Sn: 5mm II Make: DOLPHIN",
         "description": "Inductive Sensor which detects all types of Metallic target. Sensor sensing range varies with Amount of Ferrous Content in Metal. Used for Positioning,aligning & Counting Applications..",
         "imageLink": "https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/1-34.webp?fit=600%2C600&ssl=1",
-        "barcode": randomNumber
-    }
+        "barcode": randomNumber,
+        "customerName": "Rajesh Kumar",
+        "pieces": 15
+    },
+    {
+        "productName": "16x16x28 Inductive Sensor Sn: 5mm II Make: DOLPHIN",
+        "description": "Inductive Sensor which detects all types of Metallic target. Sensor sensing range varies with Amount of Ferrous Content in Metal. Used for Positioning,aligning & Counting Applications..",
+        "imageLink": "https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/1-34.webp?fit=600%2C600&ssl=1",
+        "barcode": randomNumber,
+        "customerName": "Rajesh Kumar",
+        "pieces": 15
+    },
 ];
 
 const orders = () => {
@@ -59,7 +77,11 @@ const orders = () => {
                                 <div className='flex flex-col'>
                                     <h2 className='flex-1 font-bold text-2xl'>{product.productName}</h2>
                                     <p className='flex-1'>{product.description}</p>
-                                    <p className='flex-1'>{product.barcode}</p>
+                                    <p className='flex-1 mt-4 text-left space-x-10'>
+                                        <span className=''>Customer: {product.customerName}</span>
+                                        <span>Orders: {product.pieces}</span>
+                                        <span>Barcode: {product.barcode}</span>
+                                    </p>
                                 </div>
                             </li>
                         ))}

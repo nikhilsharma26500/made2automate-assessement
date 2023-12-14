@@ -22,4 +22,3 @@ def change_quantity(prod_id: int, prod_quantity: int):
     
     session.close()
 
-

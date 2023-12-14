@@ -3,3 +3,5 @@
 - pip not installed - solved with gpt-4
 
 - hosted database on TiDB for ease of use
+
+- had forgotted about app routes and how to use them in nextjs, solved it by going through vercel tutorials

@@ -15,7 +15,7 @@ const products = [
         "productName": "16x16x28 Inductive Sensor Sn: 5mm II Make: DOLPHIN",
         "description": "Inductive Sensor which detects all types of Metallic target. Sensor sensing range varies with Amount of Ferrous Content in Metal. Used for Positioning,aligning & Counting Applications..",
         "imageLink": "https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/1-34.webp?fit=600%2C600&ssl=1",
-        "barcode": randomNumber
+        "barcode": randomNumber 
     },
     {
         "productName": "16x16x28 Inductive Sensor Sn: 5mm II Make: DOLPHIN",

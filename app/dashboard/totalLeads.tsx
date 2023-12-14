@@ -32,7 +32,7 @@ const TotalOrders = () => {
           </div>
           <button className='bg-blue-600 hover:shadow-lg active:bg-blue-900 text-white font-bold px-4 rounded-lg'>
             <Link href="/orders">
-              See all orders
+              See all leads
             </Link>
           </button>
         </div>

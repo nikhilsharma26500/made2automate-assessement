@@ -11,7 +11,7 @@ const TotalOrders = () => {
     description: 'This is a description of the order 2',
     serialNumber: '1234567890'
   }
-]
+  ]
 
   return (
     <>
@@ -22,12 +22,17 @@ const TotalOrders = () => {
               Total Orders
             </h1>
             <p>
-              a summary of all orders
+              a list of all orders
             </p>
           </div>
-          <button className='bg-blue-700 hover:bg-blue-700 active:bg-blue-800 text-white font-bold px-4 rounded-lg'>
-            See all orders
-          </button>
+          <div className='space-x-4'>
+            <button className='bg-green-700 h-[100%] hover:shadow-lg active:bg-green-900 text-white font-bold px-4 rounded-lg'>
+              Add a new order
+            </button>
+            <button className='bg-blue-600 h-[100%] hover:shadow-lg active:bg-blue-900 text-white font-bold px-4 rounded-lg'>
+              See all orders
+            </button>
+          </div>
         </div>
         <div className='flex justify-start w-[100%] my-4'>
           <ul className='w-[100%] space-y-4'>
